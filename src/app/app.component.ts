@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common'; // Import CommonModule
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CardComponent } from './card/card.component';
@@ -5,7 +6,7 @@ import { CardComponent } from './card/card.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardComponent],
+  imports: [CommonModule, RouterOutlet, CardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
